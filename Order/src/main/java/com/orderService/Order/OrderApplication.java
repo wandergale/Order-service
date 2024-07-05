@@ -22,7 +22,7 @@ public class OrderApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Order order = new Order(1034, 150, 20);
+		Order order = new Order(2282, 800, 10.0);
 		System.out.println("Pedido codigo: "+order.getCode());
 		System.out.printf("valor total R$ %.2f%n", orderService.total(order));
 	}
